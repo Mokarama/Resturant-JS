@@ -42,12 +42,7 @@ class Restaurant {
   }
 
 
-  searchFood(text) {
-    return this.menu.filter(item =>
-      item.name.toLowerCase().includes(text.toLowerCase()) ||
-      item.category.toLowerCase().includes(text.toLowerCase())
-    );
-  }
+  
 }
 
 
@@ -69,6 +64,5 @@ console.log("After Update:", res.getAllFood());
 res.deleteFood(2);
 console.log("After Delete:", res.getAllFood());
 
-console.log("Search 'Fast':", res.searchFood("Fast"));
-console.log("Search 'Burger':", res.searchFood("Burger"));
-console.log("Search 'Rice':", res.searchFood("Rice"));
+// console.log("Search 'Fast':", res.searchFood("Fast"));
+
